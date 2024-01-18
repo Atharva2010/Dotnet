@@ -1,0 +1,11 @@
+@* @using HRAPP.Entities;
+
+<h1>Employee List</h1>
+<hr/>
+
+@{
+    List<Employee> employees = Model;
+        foreach(Employee emp in employees){
+            <p>@emp.FirstName @emp.LastName</p>
+        }
+} *@
